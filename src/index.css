@@ -13,18 +13,25 @@ body {
 h1 {
   margin-bottom: 30px;
   color: #212EA0;
+  font-size: 2rem;
 }
 
 .filters {
   margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 input, select {
   padding: 10px;
-  margin: 0 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 14px;
+  width: 200px;
+  max-width: 90%;
+  box-sizing: border-box;
 }
 
 button {
@@ -45,6 +52,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 10px;
 }
 
 .job-card {
@@ -54,7 +62,6 @@ button:hover {
   margin: 15px 0;
   width: 90%;
   max-width: 500px;
-
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-align: left;
@@ -86,4 +93,43 @@ button:hover {
 .apply-link:hover {
   text-decoration: underline;
   color: #1a1d87;
+}
+.filters button {
+  margin-top: 0;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input, select {
+    width: 100%;
+    max-width: 300px;
+   
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+    .filters button {
+    padding-top: 10px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  .job-card {
+    padding: 15px;
+  }
+
+  .job-title {
+    font-size: 16px;
+  }
 }

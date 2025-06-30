@@ -22,4 +22,5 @@ Learning Outcomes:
 ✨ Building responsive UI with plain CSS
 
 Check out the live demo here:
-👉 GitHub User Finder Live
+👉[ GitHub User Finder Live
+](https://gitrepo-7krj.vercel.app/)
